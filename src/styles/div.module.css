@@ -1,0 +1,128 @@
+.home {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    
+    color: black;
+    padding-top: 100px;
+
+}
+
+.calculator_back {
+    background-color: black;
+    width: 340px;
+    height: 700px;
+    border-radius: 25px;
+
+    margin: auto;
+    display: flex;
+}
+
+.calculator_white {
+    background-color: rgb(194, 194, 194);
+    margin: 25px 10px;
+    border-radius: 20px;
+
+    width: 320px;
+    height: 650px;
+
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.pantalla {
+    height: 200px;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.pantalla_Resultados {
+    height: 70px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: (2,1fr);
+
+    font-size: 30px;
+    
+}
+.pantalla_Resultados div {
+    position: relative;
+    text-align: right;
+}
+.pantalla_NumActuales {
+    width: 100%;
+    height: 130px;
+    padding-right: 15px;
+
+    text-align: right;
+}
+.pantalla_NumActuales h1 {
+    padding-right: 15px;
+}
+
+
+.comandos {
+    top: 200px;
+    height: 450px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    padding-left: 3px;
+    padding-right: 3px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+.comandos_boton {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+
+    border-radius: 12px;
+    margin: 3px;
+    margin-bottom: 10px;
+
+    display: flex;    
+    transition: 0.2s;
+}
+.comandos_boton:hover{
+    background-color: rgb(255, 85, 0);
+    transition:all .25s ease-in-out;
+}
+.comandos_boton:active{
+    transform: translateY(4px)
+}
+.comandos_boton_naranja{
+    position: relative;
+
+    border-radius: 12px;
+    margin: 5px;
+    margin-bottom: 10px;
+
+    display: flex; 
+    background-color:rgb(255, 120, 48);
+
+    transition: 0.2s;
+}
+.comandos_boton_naranja:hover{
+    background-color: rgb(255, 85, 0);
+    transition:all .25s ease-in-out;
+}
+.comandos_boton_naranja:active{
+    transform: translateY(4px)
+}
+.comandos_boton_h1 {
+    margin: auto;
+    pointer-events: none;
+}
+.comandos_boton_h1_naranja {
+    margin: auto;
+    background-color:rgb(255, 120, 48) ;
+    pointer-events: none;
+}
